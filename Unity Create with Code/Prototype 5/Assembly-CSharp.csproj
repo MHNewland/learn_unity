@@ -60,7 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Challenge 5\Scripts\DestroyObjectX.cs" />
+    <Compile Include="Assets\Challenge 5\Scripts\DifficultyButtonX.cs" />
+    <Compile Include="Assets\Challenge 5\Scripts\GameManagerX.cs" />
+    <Compile Include="Assets\Challenge 5\Scripts\TargetX.cs" />
     <Compile Include="Assets\Course Library\_Source_Files\Scripts\DestroyAfterDelay.cs" />
+    <Compile Include="Assets\Scripts\DifficultyButton.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Target.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -96,10 +101,10 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\Course Library\Fonts\Oswald\OFL.txt" />
-    <None Include="Assets\Course Library\_Source_Files\_LICENSE.txt" />
     <None Include="Assets\Course Library\Fonts\Roboto_Condensed\LICENSE.txt" />
     <None Include="Assets\Course Library\Fonts\Margarine\OFL.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

@@ -5,8 +5,11 @@ using UnityEngine;
 public class Target : MonoBehaviour
 {
 
-    private Rigidbody targetRb;
+    public int pointVal;
+    public ParticleSystem exploosionParticle;
 
+    private Rigidbody targetRb;
+    private GameManager gameManager;
     private float minSpeed = 16;
     private float maxSpeed = 20;
     private float maxTorque = 10;
@@ -16,6 +19,7 @@ public class Target : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         targetRb = GetComponent<Rigidbody>();
         targetRb.AddForce(GetRandomForce(), ForceMode.Impulse);
         targetRb.AddTorque(GetRandomTorque(), GetRandomTorque(), GetRandomTorque(), ForceMode.Impulse);
@@ -46,11 +50,24 @@ public class Target : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
+        if (gameManager.isGameActive)
+        {
+            Instantiate(exploosionParticle, transform.position, exploosionParticle.transform.rotation);
+            gameManager.UpdateScore(pointVal);
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+
+        //if a good object hits the trigger, end the game
+        if (other.gameObject.CompareTag("Sensor"))
+        {
+            if (!gameObject.CompareTag("Bad")) { 
+                gameManager.GameOver();
+            }
+            Destroy(gameObject);
+        }
     }
 }
