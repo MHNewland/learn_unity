@@ -1,0 +1,395 @@
+{
+    "m_SelectedDeviceId": "R5CR60C60VH",
+    "m_SelectedPackage": {
+        "deviceId": "R5CR60C60VH",
+        "name": "com.NewLandGaming.com.unity.Maze_Idle",
+        "processId": 8847,
+        "exited": false
+    },
+    "m_SelectedPriority": 0,
+    "m_KnownPackagesForSerialization": [
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 27611,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 31302,
+            "exited": true
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 32342,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 2318,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 5959,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 9134,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 12959,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 16167,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 17186,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 20043,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 21524,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 22352,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 26181,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 28871,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 30111,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 31834,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 13072,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 14115,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 15426,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 16389,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 17267,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 19195,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 19958,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 22571,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 23588,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 27445,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 28905,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 29843,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 30677,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 31874,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 1670,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 3084,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 23116,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 25782,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 26760,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 27484,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 29985,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 30782,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 31429,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 3351,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 4055,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 4816,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 6092,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 8224,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 9011,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 10930,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 11747,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 13437,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 15057,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 22234,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 24242,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 24938,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 27391,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 27885,
+            "exited": false
+        },
+        {
+            "deviceId": "R5CR60C60VH",
+            "name": "com.NewLandGaming.com.unity.Maze_Idle",
+            "processId": 8847,
+            "exited": false
+        }
+    ],
+    "m_Tags": {
+        "m_Entries": [
+            {
+                "m_Name": "Filter by all listed tags",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "No Filter",
+                "m_Selected": true
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Tag Control...",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "Unity",
+                "m_Selected": false
+            },
+            {
+                "m_Name": "CRASH",
+                "m_Selected": false
+            }
+        ]
+    },
+    "m_MemoryViewerState": {
+        "MemoryWindowHeight": 300.0,
+        "MemoryWindowWidth": 170.0,
+        "MemoryTypeEnabled": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+        ],
+        "MemoryGroup": 2,
+        "Behavior": 0
+    },
+    "m_Filter": "",
+    "m_FilterIsRegularExpression": false,
+    "m_SymbolPaths": []
+}
