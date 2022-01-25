@@ -5,14 +5,15 @@ using UnityEngine;
 public class BallController: MonoBehaviour
 {
 
-    public float force = 5;
+    private float force = 5;
     private bool subAddForce;
-    private float deltaSpeed = 5;
+    private float deltaSpeed = 10;
 
     private Rigidbody ballObjectRB;
     private GameObject golfBall;
     private GameObject ballObject;
     private GameObject focalPoint;
+    private GameObject mainCamera;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,9 @@ public class BallController: MonoBehaviour
         ballObject = GameObject.Find("BallObject");
         golfBall = GameObject.Find("GolfBall");
         ballObjectRB = ballObject.GetComponent<Rigidbody>();
-        focalPoint = GameObject.Find("FocalPoint");                          
+        focalPoint = GameObject.Find("FocalPoint");
+        mainCamera = GameObject.Find("Main Camera");
+
     }
 
     // Update is called once per frame
@@ -47,18 +50,17 @@ public class BallController: MonoBehaviour
         }
 
         if (Input.GetKeyUp(KeyCode.Space)){
-            ballObjectRB.AddForce(ballObjectRB.transform.forward * force, ForceMode.Impulse);
+            ballObjectRB.AddForce(mainCamera.transform.forward * force, ForceMode.Impulse);
             force = 5;
         }
 
-        //Need to get the camera to rotate with the ball as well as prevent pressing Space/rotate until ball is stopped
-        transform.Rotate(0, Input.GetAxis("Horizontal"), 0);
+        //Need to prevent pressing Space/rotate until ball is stopped
+        golfBall.transform.RotateAround(ballObject.transform.position, Vector3.up, Input.GetAxis("Horizontal"));
 
     }
 
     private void LateUpdate()
     {
         focalPoint.transform.position = ballObject.transform.position;
-        focalPoint.transform.rotation = new Quaternion(0.0f, ballObject.transform.rotation.y, 0.0f, 0.0f);
     }
 }

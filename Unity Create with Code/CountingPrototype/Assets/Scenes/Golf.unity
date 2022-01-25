@@ -214,7 +214,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &738975387
 GameObject:
@@ -245,6 +245,64 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1902986778}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &940255751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940255754}
+  - component: {fileID: 940255753}
+  - component: {fileID: 940255752}
+  m_Layer: 0
+  m_Name: HoleCollider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &940255752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940255751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ac8d9e0f1d21044ab42710ee10b3ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CounterText: {fileID: 1779062396}
+--- !u!65 &940255753
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940255751}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.25, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &940255754
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940255751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -45, y: 0, z: 45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &967826229
 PrefabInstance:
@@ -433,7 +491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c451de6034e04454eba4bacc09d3156c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
 --- !u!1 &1221052103
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,12 +753,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753074219}
-  m_LocalRotation: {x: 0.1636617, y: 0, z: 0, w: 0.9865166}
+  m_LocalRotation: {x: 0.1636617, y: -0, z: -0, w: 0.9865166}
   m_LocalPosition: {x: 4.2987165, y: 6.6508355, z: -8.655175}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 18.839, y: 0, z: 0}
 --- !u!114 &1753074223
 MonoBehaviour:
@@ -715,13 +772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91a461180b830f140a92902890c894c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  golfBall: {fileID: 0}
-  distancex: 10
-  distancey: 10
-  distancez: -10
-  height: 5
-  damping: 2
-  rotationDamping: 10
+  focalPoint: {fileID: 0}
+  offsetDistance: {x: 10, y: 10, z: 10}
 --- !u!1 &1779062394
 GameObject:
   m_ObjectHideFlags: 0
@@ -733,10 +785,9 @@ GameObject:
   - component: {fileID: 1779062395}
   - component: {fileID: 1779062397}
   - component: {fileID: 1779062396}
-  - component: {fileID: 1779062398}
   m_Layer: 5
   m_Name: Counter
-  m_TagString: Untagged
+  m_TagString: scoreText
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -780,7 +831,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Score: 0'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -857,19 +908,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1779062394}
   m_CullTransparentMesh: 1
---- !u!114 &1779062398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779062394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23ac8d9e0f1d21044ab42710ee10b3ed, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CounterText: {fileID: 0}
 --- !u!1 &1902986777
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +917,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902986778}
+  - component: {fileID: 1902986779}
   m_Layer: 0
   m_Name: GolfBall
   m_TagString: Untagged
@@ -902,3 +941,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1902986779
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1902986777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c451de6034e04454eba4bacc09d3156c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -5,20 +5,16 @@ using UnityEngine;
 public class FollowBall : MonoBehaviour
 {
 
-    public GameObject golfBall;
+    public GameObject focalPoint;
 
-    public int distancex = 10;
-    public int distancey = 10;
-    public int distancez = 10;
+    public Vector3 offsetDistance = Vector3.one * 10;
 
-    public int height = 5;
-
-    public float damping = 2.0f;
-    public float rotationDamping = 10f;
+    private float damping = 10.0f;
+    private float rotationDamping = 100f;
 
     void Start()
     {
-        golfBall = GameObject.Find("FocalPoint");
+        focalPoint = GameObject.Find("FocalPoint");
     }
 
 
@@ -26,11 +22,11 @@ public class FollowBall : MonoBehaviour
     void LateUpdate()
     {
         Vector3 wantedPosition;
-        wantedPosition = golfBall.transform.TransformPoint(distancex, height, distancez);
-        transform.position = Vector3.Lerp(transform.position, wantedPosition, Time.deltaTime * 10);
+        wantedPosition = focalPoint.transform.TransformPoint(focalPoint.transform.forward + offsetDistance);
+        transform.position = Vector3.Lerp(transform.position, wantedPosition, Time.deltaTime * damping);
          
 
-        Quaternion wantedRotation = Quaternion.LookRotation(golfBall.transform.position - transform.position, Vector3.up);
+        Quaternion wantedRotation = Quaternion.LookRotation(focalPoint.transform.position - transform.position, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, wantedRotation, Time.deltaTime * rotationDamping);
         
     }
